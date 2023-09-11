@@ -3,7 +3,7 @@ local utils = require('nv-lsp.utils')
 local config = {
     name = "clangd",
     cmd = { "clangd" },
-    pattern = { "*.cpp", "*.cu", "*.cxx", "*.cc" },
+    pattern = { "*.cpp", "*.cu", "*.cxx", "*.cc", "*.h", "*.hpp" },
     sign = { "compile_commands.json", ".git" },
 }
 
