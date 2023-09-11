@@ -1,8 +1,8 @@
 local M = {}
 
-M.test = 1234
-function M.print()
-    print("HERE")
-end
+M.pylsp = require('nv-lsp.pylsp')
 
+function M.setup()
+    M.pylsp.setup()
+end
 return M

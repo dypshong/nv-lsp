@@ -3,6 +3,7 @@ if exists('g:loaded_nv_lsp')
 endif
 
 "command! -nargs=* -complete=custom,v:lua.require'neo-tree.command'.complete_args
-command! -nargs=* NvLSP lua require("nv-lsp").print()
+command! -nargs=* NvLSPSetup lua require("nv-lsp").setup()
+execute ":NvLSPSetup"
 
 let g:loaded_nv_lsp = 1
