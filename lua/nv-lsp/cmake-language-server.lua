@@ -5,7 +5,7 @@ local config = {
     name = "cmake-language-server",
     cmd = { "cmake-language-server" },
     pattern = { "CMakeLists.txt" },
-    sign = { ".git" "CMakeLists.txt" },
+    sign = { ".git", "CMakeLists.txt" },
 }
 
 local M = {}
