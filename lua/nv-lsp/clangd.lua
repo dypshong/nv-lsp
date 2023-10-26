@@ -5,6 +5,7 @@ local config = {
     cmd = { "clangd" },
     pattern = { "*.cpp", "*.cu", "*.cxx", "*.cc", "*.h", "*.hpp" },
     sign = { "compile_commands.json", ".git" },
+    install = {}
 }
 
 local M = {}
