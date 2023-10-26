@@ -5,6 +5,7 @@ local M = {}
 function M.setup(config)
     vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
         pattern = config.pattern,
+        install = config.install,
         callback = function(ev)
             vim.lsp.start({
                 name = config.name,

@@ -5,6 +5,7 @@ local config = {
     cmd = { "pylsp" },
     pattern = { "*.py" },
     sign = { ".git" },
+    install = { "pip", "install", "python-lsp-server[all]" }
 }
 
 local M = {}
